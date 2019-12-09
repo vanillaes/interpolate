@@ -1,6 +1,6 @@
 {
   "name": "interpolate-es",
-  "version": "0.0.0",
+  "version": "1.0.0-pre0",
   "description": "Dynamically build tagged templates",
   "license": "MIT",
   "author": "Evan Plaice <evanplaice@gmail.com> (http://evanplaice.com/)",
