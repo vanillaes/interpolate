@@ -1,0 +1,20 @@
+{
+  "name": "interpolate-es",
+  "version": "0.0.0",
+  "description": "Create tagged templates dynamically",
+  "license": "MIT",
+  "author": "Evan Plaice <evanplaice@gmail.com> (http://evanplaice.com/)",
+  "repository": "http://github.com/vanillaes/interpolate-es/",
+  "main": "src/interpolate.js",
+  "type": "module",
+  "scripts": {
+    "test": "tape-es",
+    "test:watch": "tape-watch-es",
+    "lint": "semistandard",
+    "package": "npx rimraf package && npm pack | tail -n 1 | xargs tar -xf",
+    "preversion": "npm test && npm run lint && npm run types",
+    "postversion": "git push --follow-tags"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
