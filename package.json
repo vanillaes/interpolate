@@ -12,7 +12,7 @@
     "test:watch": "tape-watch-es",
     "lint": "semistandard",
     "package": "npx rimraf package && npm pack | tail -n 1 | xargs tar -xf",
-    "preversion": "npm test && npm run lint && npm run types",
+    "preversion": "npm test && npm run lint",
     "postversion": "git push --follow-tags"
   },
   "dependencies": {},
