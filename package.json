@@ -17,6 +17,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "semistandard": "^14.2.0"
+    "semistandard": "^14.2.0",
+    "tape-es": "^1.1.1"
   }
 }
