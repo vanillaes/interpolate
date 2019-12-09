@@ -1,7 +1,7 @@
 {
   "name": "interpolate-es",
   "version": "0.0.0",
-  "description": "Create tagged templates dynamically",
+  "description": "Dynamically build tagged templates",
   "license": "MIT",
   "author": "Evan Plaice <evanplaice@gmail.com> (http://evanplaice.com/)",
   "repository": "http://github.com/vanillaes/interpolate-es/",
@@ -12,10 +12,12 @@
     "test:watch": "tape-watch-es",
     "lint": "semistandard",
     "types": "npx tsc -p .config/jsconfig.json",
+    "build": "npm run build:cjs && npm run build:typings",
+    "build:cjs": "npx rollup --config .config/cjs.config.js",
     "build:typings": "npx tsc -p .config/tsconfig.json",
     "package": "npx rimraf package && npm pack | tail -n 1 | xargs tar -xf",
     "preversion": "npm test && npm run lint && npm run types",
-    "version": "npm run build:typings",
+    "version": "npm run build",
     "postversion": "git push --follow-tags"
   },
   "dependencies": {},
