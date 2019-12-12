@@ -35,6 +35,8 @@ Builds a string from a template string + tags collection.
 
 ## CommonJS
 
+A CommonJS bundle is included for backward compatible with `node <= 13.2`
+
 ```javascript
 const Interpolate = require('interpolate-es/dist/interpolate-es.cjs');
 ```

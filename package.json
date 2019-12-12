@@ -13,6 +13,9 @@
   "repository": "http://github.com/vanillaes/interpolate-es/",
   "main": "src/interpolate.js",
   "type": "module",
+  "engines": {
+    "node": ">=13.2"
+  },
   "scripts": {
     "test": "tape-es",
     "test:watch": "tape-watch-es",
