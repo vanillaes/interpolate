@@ -11,8 +11,10 @@
   "license": "MIT",
   "author": "Evan Plaice <evanplaice@gmail.com> (http://evanplaice.com/)",
   "repository": "http://github.com/vanillaes/interpolate-es/",
-  "main": "src/interpolate.js",
+  "main": "index.js",
+  "module": "dist/interpolate.esm.js",
   "type": "module",
+  "types": "index.d.ts",
   "engines": {
     "node": ">=13.2"
   },
@@ -21,8 +23,9 @@
     "test:watch": "tape-watch-es",
     "lint": "semistandard",
     "types": "npx tsc -p .config/jsconfig.json",
-    "build": "npm run build:cjs && npm run build:typings",
+    "build": "npm run build:cjs && npm run build:esm && npm run build:typings",
     "build:cjs": "npx rollup --config .config/cjs.config.js",
+    "build:esm": "npx rollup --config .config/esm.config.js ",
     "build:typings": "npx tsc -p .config/tsconfig.json",
     "package": "npx rimraf package && npm pack | tail -n 1 | xargs tar -xf",
     "preversion": "npm test && npm run lint && npm run types",
