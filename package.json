@@ -1,6 +1,6 @@
 {
   "name": "interpolate-es",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Dynamically build tagged templates",
   "keywords": [
     "tagged",
