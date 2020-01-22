@@ -11,6 +11,7 @@ A small, easy-to-use template literal builder. Good for loading template literal
 - ECMAScript Module
 - CommonJS Bundle Included
 - Typescript Compatible
+- Tiny Footprint (1K)
 
 ## Installation
 
