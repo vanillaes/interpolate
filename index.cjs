@@ -11,7 +11,15 @@
 function interpolate (template, tags = {}) {
   const keys = Object.keys(tags);
   const values = Object.values(tags);
-  return new Function(...keys, `return \`${template}\`;`)(...values);
+  try {
+    return new Function(...keys, `return \`${template}\`;`)(...values);
+  } catch (e) {
+    console.group('Template Error:');
+    console.error(tags);
+    console.error(template);
+    console.groupEnd();
+    throw Error(e);
+  }
 }
 
 module.exports = interpolate;
