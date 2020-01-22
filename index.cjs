@@ -14,11 +14,21 @@ function interpolate (template, tags = {}) {
   try {
     return new Function(...keys, `return \`${template}\`;`)(...values);
   } catch (e) {
-    console.group('Template Error:');
-    console.error(tags);
-    console.error(template);
-    console.groupEnd();
-    throw Error(e);
+    throw new TemplateException(template, tags, e);
+  }
+}
+
+class TemplateException extends Error {
+  constructor (template, tags, message) {
+    super();
+    this.name = 'TemplateError';
+    let msg = '\n------------------\n';
+    msg += `Template: \`${template}\``;
+    msg += '\n------------------\n';
+    msg += `Tags: ${JSON.stringify(tags, null, 2)}`;
+    msg += '\n------------------\n';
+    msg += message;
+    this.message = msg;
   }
 }
 
