@@ -12,7 +12,6 @@
   "author": "Evan Plaice <evanplaice@gmail.com> (http://evanplaice.com/)",
   "repository": "http://github.com/vanillaes/interpolate-es/",
   "main": "index.js",
-  "module": "dist/interpolate.esm.js",
   "type": "module",
   "types": "index.d.ts",
   "scripts": {
