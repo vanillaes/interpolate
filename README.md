@@ -1,12 +1,15 @@
-[![GitHub Releases](https://img.shields.io/github/release/vanillaes/interpolate-es.svg)](https://github.com/vanillaes/interpolate-es/releases)
-[![NPM Release](https://img.shields.io/npm/v/interpolate-es.svg)](https://www.npmjs.com/package/interpolate-es)
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/vanillaes/interpolate-es/master/LICENSE)
+<h1 align="center">Interpolate-ES</h1>
+
+A small, easy-to-use template literal builder. Good for loading template literal strings from external sources.
+
+[![GitHub Releases](https://badgen.net/github/tag/vanillaes/interpolate-es)](https://github.com/vanillaes/interpolate-es/releases)
+[![NPM Release](https://badgen.net/npm/v/interpolate-es)](https://www.npmjs.com/package/interpolate-es)
+[![Bundlephobia](https://badgen.net/bundlephobia/minzip/interpolate-es)](https://bundlephobia.com/result?p=interpolate-es)
+[![MIT License](https://badgen.net/github/license/vanillaes/interpolate-es)](https://raw.githubusercontent.com/vanillaes/interpolate-es/master/LICENSE)
 [![Latest Status](https://github.com/vanillaes/interpolate-es/workflows/Latest/badge.svg)](https://github.com/vanillaes/interpolate-es/actions)
 [![Release Status](https://github.com/vanillaes/interpolate-es/workflows/Release/badge.svg)](https://github.com/vanillaes/interpolate-es/actions)
 
-# interpolate-es
-
-A small, easy-to-use template literal builder. Good for loading template literal strings from external sources.
+# features
 
 - ECMAScript Module
 - CommonJS Bundle Included
