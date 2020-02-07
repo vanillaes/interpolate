@@ -11,8 +11,12 @@
   "license": "MIT",
   "author": "Evan Plaice <evanplaice@gmail.com> (http://evanplaice.com/)",
   "repository": "http://github.com/vanillaes/interpolate-es/",
-  "main": "index.js",
   "type": "module",
+  "main": "index.cjs",
+  "exports": {
+    "import": "./index.js",
+    "require": "./index.cjs"
+  },
   "types": "index.d.ts",
   "scripts": {
     "test": "tape-es",
