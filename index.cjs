@@ -18,6 +18,10 @@ function interpolate (template, tags = {}) {
   }
 }
 
+
+/**
+ * @private
+ */
 class TemplateException extends Error {
   constructor (template, tags, message) {
     super();
