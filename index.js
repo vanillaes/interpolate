@@ -16,7 +16,6 @@ export default function interpolate (template, tags = {}) {
   }
 }
 
-
 /**
  * @private
  */

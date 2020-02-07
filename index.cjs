@@ -18,7 +18,6 @@ function interpolate (template, tags = {}) {
   }
 }
 
-
 /**
  * @private
  */
