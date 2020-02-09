@@ -9,6 +9,8 @@ A small, easy-to-use template literal builder. Good for loading template literal
 [![Latest Status](https://github.com/vanillaes/interpolate-es/workflows/Latest/badge.svg)](https://github.com/vanillaes/interpolate-es/actions)
 [![Release Status](https://github.com/vanillaes/interpolate-es/workflows/Release/badge.svg)](https://github.com/vanillaes/interpolate-es/actions)
 
+<p align="center"><strong>⚠️ Notice: EcmaScript Module Support in Node is Experimental ⚠️</strong></p>
+
 # features
 
 - ECMAScript Module
