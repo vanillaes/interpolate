@@ -40,9 +40,9 @@
   "devDependencies": {
     "rollup-plugin-terser": "^5.2.0",
     "semistandard": "^14.2.0",
-    "tape-es": "^1.2.3"
+    "tape-es": "^1.2.5"
   },
   "engines": {
-    "node": ">=13.7"
+    "node": "~14"
   }
 }
