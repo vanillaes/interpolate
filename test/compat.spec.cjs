@@ -1,6 +1,6 @@
 /* eslint-disable no-template-curly-in-string */
 const test = require('tape');
-const Interpolate = require('interpolate-es');
+const Interpolate = require('@vanillaes/interpolate');
 
 test('Creates a template from a string', (t) => {
   const template = 'This is a template string';

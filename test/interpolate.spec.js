@@ -1,6 +1,6 @@
 /* eslint-disable no-template-curly-in-string */
 import test from 'tape';
-import Interpolate from 'interpolate-es';
+import Interpolate from '@vanillaes/interpolate';
 
 test('Creates a template from a string', (t) => {
   const template = 'This is a template string';
