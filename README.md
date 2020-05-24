@@ -1,13 +1,13 @@
-<h1 align="center">Interpolate-ES</h1>
+<h1 align="center">Interpolate</h1>
 
 A small, easy-to-use template literal builder. Good for loading template literal strings from external sources.
 
-[![GitHub Releases](https://badgen.net/github/tag/vanillaes/interpolate-es)](https://github.com/vanillaes/interpolate-es/releases)
-[![NPM Release](https://badgen.net/npm/v/interpolate-es)](https://www.npmjs.com/package/interpolate-es)
-[![Bundlephobia](https://badgen.net/bundlephobia/minzip/interpolate-es)](https://bundlephobia.com/result?p=interpolate-es)
-[![MIT License](https://badgen.net/github/license/vanillaes/interpolate-es)](https://raw.githubusercontent.com/vanillaes/interpolate-es/master/LICENSE)
-[![Latest Status](https://github.com/vanillaes/interpolate-es/workflows/Latest/badge.svg)](https://github.com/vanillaes/interpolate-es/actions)
-[![Release Status](https://github.com/vanillaes/interpolate-es/workflows/Release/badge.svg)](https://github.com/vanillaes/interpolate-es/actions)
+[![GitHub Releases](https://badgen.net/github/tag/vanillaes/interpolate)](https://github.com/vanillaes/interpolate/releases)
+[![NPM Release](https://badgen.net/npm/v/@vanillaes/interpolate)](https://www.npmjs.com/package/@vanillaes/interpolate)
+[![Bundlephobia](https://badgen.net/bundlephobia/minzip/@vanillaes/interpolate)](https://bundlephobia.com/result?p=@vanillaes/interpolate)
+[![MIT License](https://badgen.net/github/license/vanillaes/interpolate)](https://raw.githubusercontent.com/vanillaes/interpolate/master/LICENSE)
+[![Latest Status](https://github.com/vanillaes/interpolate/workflows/Latest/badge.svg)](https://github.com/vanillaes/interpolate/actions)
+[![Release Status](https://github.com/vanillaes/interpolate/workflows/Release/badge.svg)](https://github.com/vanillaes/interpolate/actions)
 
 # features
 
@@ -19,11 +19,11 @@ A small, easy-to-use template literal builder. Good for loading template literal
 ## Installation
 
 ```sh
-npm install interpolate-es
+npm install @vanillaes/interpolate
 ```
 
 ```javascript
-import Interpolate from 'interpolate-es';
+import Interpolate from '@vanillaes/interpolate';
 ```
 
 ## Interpolate()
@@ -42,7 +42,7 @@ Builds a string from a template string + tags collection.
 A `.cjs` bundle is included for CommonJS compatibility 
 
 ```javascript
-const Interpolate = require('interpolate-es');
+const Interpolate = require('@vanillaes/interpolate');
 ```
 
 ## Typings
