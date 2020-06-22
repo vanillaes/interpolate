@@ -7,12 +7,12 @@
  * @returns the template output with the tagged literals applied
  */
 export default function interpolate (template, tags = {}) {
-  const keys = Object.keys(tags);
-  const values = Object.values(tags);
+  const keys = Object.keys(tags)
+  const values = Object.values(tags)
   try {
-    return new Function(...keys, `return \`${template}\`;`)(...values);
+    return new Function(...keys, `return \`${template}\`;`)(...values)
   } catch (e) {
-    throw new TemplateException(template, tags, e);
+    throw new TemplateException(template, tags, e)
   }
 }
 
@@ -21,14 +21,14 @@ export default function interpolate (template, tags = {}) {
  */
 class TemplateException extends Error {
   constructor (template, tags, message) {
-    super();
-    this.name = 'TemplateError';
-    let msg = '\n------------------\n';
-    msg += `Template: \`${template}\``;
-    msg += '\n------------------\n';
-    msg += `Tags: ${JSON.stringify(tags, null, 2)}`;
-    msg += '\n------------------\n';
-    msg += message;
-    this.message = msg;
+    super()
+    this.name = 'TemplateError'
+    let msg = '\n------------------\n'
+    msg += `Template: \`${template}\``
+    msg += '\n------------------\n'
+    msg += `Tags: ${JSON.stringify(tags, null, 2)}`
+    msg += '\n------------------\n'
+    msg += message
+    this.message = msg
   }
 }

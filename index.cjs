@@ -12,9 +12,9 @@ function interpolate (template, tags = {}) {
   const keys = Object.keys(tags);
   const values = Object.values(tags);
   try {
-    return new Function(...keys, `return \`${template}\`;`)(...values);
+    return new Function(...keys, `return \`${template}\`;`)(...values)
   } catch (e) {
-    throw new TemplateException(template, tags, e);
+    throw new TemplateException(template, tags, e)
   }
 }
 
