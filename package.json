@@ -3,10 +3,10 @@
   "version": "1.4.3",
   "description": "Interpret JavaScript tagged literal templates",
   "keywords": [
-    "tagged",
-    "template",
-    "literal",
-    "vanilla"
+    "esm",
+    "esmodules",
+    "javascript",
+    "template-engine"
   ],
   "license": "MIT",
   "author": "Evan Plaice <evanplaice@gmail.com> (http://evanplaice.com/)",
