@@ -1,7 +1,7 @@
 {
   "name": "@vanillaes/interpolate",
   "version": "1.4.3",
-  "description": "Dynamically build tagged templates",
+  "description": "Interpret JavaScript tagged literal templates",
   "keywords": [
     "tagged",
     "template",
