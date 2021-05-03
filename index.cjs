@@ -1,5 +1,7 @@
 'use strict';
 
+Object.defineProperty(exports, '__esModule', { value: true });
+
 /* eslint-disable no-new-func */
 /**
  * Interpolate a tagged template literal from the inputs
@@ -35,4 +37,4 @@ class TemplateException extends Error {
   }
 }
 
-module.exports = interpolate;
+exports.interpolate = interpolate;

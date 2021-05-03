@@ -24,7 +24,7 @@ npm install @vanillaes/interpolate
 ```
 
 ```javascript
-import Interpolate from '@vanillaes/interpolate';
+import interpolate from '@vanillaes/interpolate';
 ```
 
 ## Interpolate()
@@ -43,7 +43,7 @@ Builds a string from a template string + tags collection.
 A `.cjs` bundle is included for CommonJS compatibility 
 
 ```javascript
-const Interpolate = require('@vanillaes/interpolate');
+const interpolate = require('@vanillaes/interpolate').interpolate;
 ```
 
 ## Typings

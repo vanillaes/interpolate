@@ -6,7 +6,7 @@
  * @param {*} [tags] the tagged values in the template
  * @returns the template output with the tagged literals applied
  */
-export default function interpolate (template, tags = {}) {
+export function interpolate (template, tags = {}) {
   const keys = Object.keys(tags)
   const values = Object.values(tags)
   try {
