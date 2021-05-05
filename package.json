@@ -14,7 +14,8 @@
   "type": "module",
   "exports": {
     "import": "./index.js",
-    "require": "./index.cjs"
+    "require": "./index.cjs",
+    "browser": "./index.min.js"
   },
   "types": "index.d.ts",
   "scripts": {
