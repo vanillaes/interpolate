@@ -12,7 +12,6 @@
   "author": "Evan Plaice <evanplaice@gmail.com> (http://evanplaice.com/)",
   "repository": "http://github.com/vanillaes/interpolate",
   "type": "module",
-  "main": "index.cjs",
   "exports": {
     "import": "./index.js",
     "require": "./index.cjs"
