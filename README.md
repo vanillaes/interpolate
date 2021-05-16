@@ -8,6 +8,8 @@ A small, easy-to-use template literal builder. Good for loading template literal
   <a href="https://bundlephobia.com/result?p=@vanillaes/interpolate"><img src="https://badgen.net/bundlephobia/minzip/@vanillaes/interpolate" alt="Bundlephobia"></a>
   <a href="https://github.com/vanillaes/interpolate/actions"><img src="https://github.com/vanillaes/interpolate/workflows/Latest/badge.svg" alt="Latest Status"></a>
   <a href="https://github.com/vanillaes/interpolate/actions"><img src="https://github.com/vanillaes/interpolate/workflows/Release/badge.svg" alt="Release Status"></a>
+
+  <a href="https://discord.gg/aSWYgtybzV"><img alt="Discord" src="https://img.shields.io/discord/723296249121603604?color=%23738ADB"></a>
 </div>
 
 # features
