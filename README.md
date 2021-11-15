@@ -12,21 +12,46 @@ A small, easy-to-use template literal builder. Good for loading template literal
   <a href="https://discord.gg/aSWYgtybzV"><img alt="Discord" src="https://img.shields.io/discord/723296249121603604?color=%23738ADB"></a>
 </div>
 
-# features
+# Features
 
 - ECMAScript Module
-- CommonJS Bundle Included
 - Typescript Compatible
 - Tiny Footprint (1K)
 
-## Installation
+## Imports
+
+This package works isomorphically in browser and server-side JavaScript
+
+### Browser
+
+Import directly from the local path or a CDN
+
+```html
+<script type="module">
+import { interpolate } from 'path/to/interpolate/index.js'
+</script>
+```
+
+The minified version can be imported from
+
+```html
+<script type="module">
+import { interpolate } from 'path/to/interpolate/index.min.js'
+</script>
+```
+
+### Node
+
+Install the package
 
 ```sh
 npm install @vanillaes/interpolate
 ```
 
+Import using the module path
+
 ```javascript
-import interpolate from '@vanillaes/interpolate';
+import { interpolate } from '@vanillaes/interpolate'
 ```
 
 ## Interpolate()
@@ -39,14 +64,6 @@ Builds a string from a template string + tags collection.
 
 - template - the template literal string
 - tags - the tagged values in the template
-
-## CommonJS
-
-A `.cjs` bundle is included for CommonJS compatibility 
-
-```javascript
-const interpolate = require('@vanillaes/interpolate').interpolate;
-```
 
 ## Typings
 
