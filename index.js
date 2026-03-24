@@ -17,9 +17,14 @@ export function interpolate (template, tags = {}) {
 }
 
 /**
- * @private
+ * A teplate-specific Exception
  */
 class TemplateException extends Error {
+  /**
+   * @param {string} template the template literal string
+   * @param {Object.<string, string>} [tags] the tagged values in the template
+   * @param {*} [message] the error message
+  */
   constructor (template, tags, message) {
     super()
     this.name = 'TemplateError'
