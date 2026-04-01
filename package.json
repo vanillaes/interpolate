@@ -13,17 +13,17 @@
   "repository": "http://github.com/vanillaes/interpolate",
   "type": "module",
   "exports": {
-    "import": "./index.js",
-    "types": "./index.d.ts",
-    "browser": "./index.min.js"
+    "import": "./src/index.js",
+    "types": "./src/index.d.ts",
+    "browser": "./src/index.min.js"
   },
   "scripts": {
     "test": "esmtk test",
     "lint": "esmtk lint",
-    "type": "esmtk type index.js",
+    "type": "esmtk type src/index.js",
     "build": "npm run build:min && npm run build:typings",
-    "build:min": "esmtk minify index.js index.min.js",
-    "build:typings": "esmtk typings index.js",
+    "build:min": "esmtk minify src/index.js src/index.min.js",
+    "build:typings": "esmtk typings src/index.js",
     "clean": "npm run clean:min && npm run clean:typings",
     "clean:min": "esmtk clean --minify",
     "clean:typings": "esmtk clean --typings",
