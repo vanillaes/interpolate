@@ -14,27 +14,24 @@
   "type": "module",
   "exports": {
     "import": "./index.js",
+    "types": "./index.d.ts",
     "browser": "./index.min.js"
   },
-  "types": "index.d.ts",
   "scripts": {
-    "test": "tape-es",
-    "test:watch": "tape-watch-es",
+    "test": "esmtk test",
     "lint": "esmtk lint",
-    "types": "npx -p typescript tsc index.js  -t esnext --allowJS --checkJS --skipLibCheck --noEmit",
+    "type": "esmtk type index.js",
     "build": "npm run build:min && npm run build:typings",
     "build:min": "esmtk minify index.js index.min.js",
-    "build:typings": "npx -p typescript tsc index.js  -t esnext --allowJS --checkJS --skipLibCheck --declaration --emitDeclarationOnly --noEmitOnError",
-    "clean": "npm run clean:builds && npm run clean:typings",
-    "clean:builds": "npx rimraf index.min.js",
-    "clean:typings": "npx rimraf src/*.d.ts",
-    "package": "npx rimraf package && npm pack | tail -n 1 | xargs tar -xf",
-    "preversion": "npm test && npm run lint && npm run types",
-    "version": "npm run build",
+    "build:typings": "esmtk typings index.js",
+    "clean": "npm run clean:min && npm run clean:typings",
+    "clean:min": "esmtk clean --minify",
+    "clean:typings": "esmtk clean --typings",
+    "preview": "esmtk preview",
+    "preversion": "npm test && npm run lint && npm run type",
     "postversion": "git push --follow-tags"
   },
-  "devDependencies": {
-    "esmtk": "^0.5.13",
-    "tape-es": "^1.2.16"
+  "dependencies": {
+    "@vanillaes/esmtk": "^1.2.3"
   }
 }

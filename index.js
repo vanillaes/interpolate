@@ -1,30 +1,33 @@
 /* eslint-disable no-new-func */
 /**
  * Interpolate a tagged template literal from the inputs
- *
- * @param {*} template the template literal string
- * @param {*} [tags] the tagged values in the template
- * @returns the template output with the tagged literals applied
+ * @param {string} template the template literal string
+ * @param {{[key: string]: string}} [tags] the tagged values in the template
+ * @returns {string} the template output with the tagged literals applied
  */
 export function interpolate (template, tags = {}) {
   const keys = Object.keys(tags)
   const values = Object.values(tags)
   try {
     return new Function(...keys, `return \`${template}\`;`)(...values)
-  } catch (e) {
-    throw new TemplateException(template, tags, e)
+  } catch (error) {
+    if (error instanceof Error) {
+      throw new TemplateError(template, tags, error.message)
+    } else {
+      throw new TemplateError(template, tags, `${error}`)
+    }
   }
 }
 
 /**
  * A teplate-specific Exception
  */
-class TemplateException extends Error {
+class TemplateError extends Error {
   /**
    * @param {string} template the template literal string
-   * @param {Object.<string, string>} [tags] the tagged values in the template
-   * @param {*} [message] the error message
-  */
+   * @param {{[key: string]: string}} [tags] the tagged values in the template
+   * @param {string} [message] the error message
+   */
   constructor (template, tags, message) {
     super()
     this.name = 'TemplateError'
