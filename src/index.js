@@ -1,3 +1,4 @@
+/* @ts-self-types="./index.d.ts" */
 /* eslint-disable no-new-func */
 /**
  * Interpolate a tagged template literal from the inputs

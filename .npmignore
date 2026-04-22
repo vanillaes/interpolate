@@ -1,4 +1,4 @@
 .github/
 .vscode/
-test/
 *.spec.js
+jsr.json

@@ -6,8 +6,9 @@
 
 <div align="center">
   <a href="https://github.com/vanillaes/interpolate/releases"><img src="https://badgen.net/github/tag/vanillaes/interpolate?cache-control=no-cache" alt="GitHub Release"></a>
-  <a href="https://www.npmjs.com/package/@vanillaes/interpolate"><img src="https://badgen.net/npm/v/@vanillaes/interpolate?icon=npm" alt="NPM Version"></a>
-  <a href="https://www.npmjs.com/package/@vanillaes/interpolate"><img src="https://badgen.net/npm/dm/@vanillaes/interpolate?icon=npm" alt="NPM Downloads"></a>
+  <a href="https://npmjs.com/package/@vanillaes/interpolate"><img src="https://badgen.net/npm/dw/@vanillaes/interpolate?icon=npm" alt="NPM Weekly Downloads"></a>
+  <a href="https://jsr.io/@vanillaes/interpolate"><img src="https://jsr.io/badges/@vanillaes/interpolate/weekly-downloads" alt="JSR Weekly Downloads"></a>
+  <a href="https://jsr.io/@vanillaes/interpolate"><img src="https://jsr.io/badges/@vanillaes/interpolate/score" alt="JSR Score"></a>
   <a href="https://github.com/vanillaes/interpolate/actions"><img src="https://github.com/vanillaes/interpolate/workflows/Latest/badge.svg" alt="Latest Status"></a>
   <a href="https://github.com/vanillaes/interpolate/actions"><img src="https://github.com/vanillaes/interpolate/workflows/Release/badge.svg" alt="Release Status"></a>
 </div>
