@@ -1,6 +1,6 @@
 {
   "name": "@vanillaes/interpolate",
-  "version": "4.0.1",
+  "version": "4.1.0",
   "description": "Interpret JavaScript tagged literal templates",
   "keywords": [
     "esm",
